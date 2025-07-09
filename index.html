@@ -1,2 +1,40 @@
-<h1>Hmm. Sulla ei oo oikeutta D:</h1>
-<title>Tätä ei oo koodattu.</title>
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kivikko - Ylepästi Suomalainen</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <ul>
+        <li><a href="#" class="active">Etusivu</a></li>
+        <li><a href="#">Discord</a></li>
+        <li><a href="#" target="_blank">Rangaistukset</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="hero">
+    <div class="content">
+      <h1>Ylpeästo suomalainen</h1>
+      <p class="label">IP:</p>
+      <p class="address">Tulossa pian.</p>
+      <p class="bedrock">Tulossa pian.</p>
+      <div class="buttons">
+        <button onclick="copyToClipboard('tulossapian')">Kopioi Java IP</button>
+        <button onclick="copyToClipboard('tulossapian')">Kopioi Bedrock IP</button>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    function copyToClipboard(text) {
+      navigator.clipboard.writeText(text);
+      alert(`Kopioitu: ${text}`);
+    }
+  </script>
+</body>
+</html>
